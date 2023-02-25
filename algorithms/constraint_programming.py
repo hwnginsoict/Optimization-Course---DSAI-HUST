@@ -60,7 +60,7 @@ class PickupProb:
                 self.q[i] = random.randint(10, 15)
 
         if mode == 'user': # Prompt the user to input the problem
-            [self.m, self.n] = [int(i) for i in input('Enter values for n and m separated by a space:').split()]
+            [self.n, self.m] = [int(i) for i in input('Enter values for n and m separated by a space:').split()]
             
             print('Enter values in Q row by row:')
             self.Q = [[int(i) for i in input().split()] for j in range(self.n)]
@@ -69,7 +69,7 @@ class PickupProb:
             self.Q.insert(0, [0 for i in range(self.n)])
             
             print('Enter values for d row by row:')
-            self.d = [[int(i) for i in input.split()] for j in range(self.m+1)]
+            self.d = [[int(i) for i in input().split()] for j in range(self.m+1)]
 
             print('Enter values in q:')
             self.q = [int(i) for i in range(self.n)]
