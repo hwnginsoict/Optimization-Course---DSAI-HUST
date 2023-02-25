@@ -72,7 +72,7 @@ class PickupProb:
             self.d = [[int(i) for i in input().split()] for j in range(self.m+1)]
 
             print('Enter values in q:')
-            self.q = [int(i) for i in range(self.n)]
+            self.q = [int(i) for i in input().split()]
             
         if mode == 'text': # take value from the input.txt
             with open('input.txt') as f:
